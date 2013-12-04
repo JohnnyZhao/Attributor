@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A598" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="bJ5-rQ-vL0">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A598" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="5Rw-6E-msq">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
@@ -156,10 +156,11 @@
             </objects>
             <point key="canvasLocation" x="1828" y="-21"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Navigation Controller - Attributor-->
         <scene sceneID="H3C-I1-LbN">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bJ5-rQ-vL0" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Attributor" id="Hga-PC-2OI"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="zWl-yC-bly">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -173,6 +174,44 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3yY-SZ-zWs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="820" y="-21"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="SYi-dK-4fq">
+            <objects>
+                <tabBarController definesPresentationContext="YES" id="5Rw-6E-msq" sceneMemberID="viewController">
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="hqv-pE-DD7">
+                        <rect key="frame" x="129" y="330" width="163" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="bJ5-rQ-vL0" kind="relationship" relationship="viewControllers" id="9b3-vz-plA"/>
+                        <segue destination="w4m-ND-PVk" kind="relationship" relationship="viewControllers" id="OAn-oA-PIi"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cmA-Us-mKv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="500" y="510"/>
+        </scene>
+        <!--View Controller - Item 2-->
+        <scene sceneID="OaJ-Hf-DOg">
+            <objects>
+                <viewController id="w4m-ND-PVk" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7Ah-hZ-LqM"/>
+                        <viewControllerLayoutGuide type="bottom" id="fno-SU-otr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Hwj-TQ-giD">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="YxT-cd-9hF"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JIG-Le-7HE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1034" y="792"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
